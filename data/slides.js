@@ -14,7 +14,7 @@ const slides = [
   },
   {
     id: "3",
-    image: require("../assets/images/onboarding5.jpg"),
+    image: require("../assets/images/onboarding7.jpg"),
     title: "Share with your friends!",
     subtitle:
       "Meet new friends and show off your daily challenges on your feed.",

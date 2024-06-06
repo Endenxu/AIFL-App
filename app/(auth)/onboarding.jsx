@@ -15,15 +15,14 @@ import {
 
 const { width, height } = Dimensions.get("window");
 
-const COLORS = { primary: "#282534", white: "#fff" };
+const COLORS = { primary: "#020617", white: "#f8fafc" };
 
 const Slide = ({ item }) => {
   return (
     <View className="items-center">
       <Image
         source={item?.image}
-        style={{ height: "85%", width, resizeMode: "contain" }}
-        /*className="flex flex-row w-[200px] h-[200x]"*/
+        style={{ height: "85%", width, display: "flex" }}
         resizeMode="contain"
       />
       <View>
@@ -83,7 +82,7 @@ const OnboardingScreen = ({ navigation }) => {
               style={[
                 styles.indicator,
                 currentSlideIndex == index && {
-                  backgroundColor: COLORS.white,
+                  backgroundColor: COLORS.primary,
                   width: 25,
                 },
               ]}
@@ -99,7 +98,13 @@ const OnboardingScreen = ({ navigation }) => {
                 style={styles.btn}
                 onPress={() => router.push("/sign-in")}
               >
-                <Text style={{ fontWeight: "bold", fontSize: 15 }}>
+                <Text
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: 15,
+                    color: COLORS.white,
+                  }}
+                >
                   GET STARTED
                 </Text>
               </TouchableOpacity>
@@ -111,7 +116,7 @@ const OnboardingScreen = ({ navigation }) => {
                 style={[
                   styles.btn,
                   {
-                    borderColor: COLORS.white,
+                    borderColor: COLORS.primary,
                     borderWidth: 1,
                     backgroundColor: "transparent",
                   },
@@ -122,7 +127,7 @@ const OnboardingScreen = ({ navigation }) => {
                   style={{
                     fontWeight: "bold",
                     fontSize: 15,
-                    color: COLORS.white,
+                    color: COLORS.primary,
                   }}
                 >
                   SKIP
@@ -138,6 +143,7 @@ const OnboardingScreen = ({ navigation }) => {
                   style={{
                     fontWeight: "bold",
                     fontSize: 15,
+                    color: COLORS.white,
                   }}
                 >
                   NEXT
@@ -152,13 +158,13 @@ const OnboardingScreen = ({ navigation }) => {
 
   return (
     <SafeAreaView
-      /*style={{ flex: 1, backgroundColor: COLORS.primary }}*/ className="flex-1 bg-primary"
+      /*style={{ flex: 1, backgroundColor: COLORS.primary }}*/ className="flex-1 bg-white"
     >
       <StatusBar className="bg-primary" /*backgroundColor={COLORS.primary}*/ />
       <FlatList
         ref={ref}
         onMomentumScrollEnd={updateCurrentSlideIndex}
-        contentContainerStyle={{ height: height * 0.75 }}
+        contentContainerStyle={{ height: height * 0.85 }}
         showsHorizontalScrollIndicator={false}
         horizontal
         data={slides}
@@ -172,7 +178,7 @@ const OnboardingScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   subtitle: {
-    color: COLORS.white,
+    color: COLORS.primary,
     fontSize: 13,
     marginTop: 10,
     maxWidth: "70%",
@@ -180,7 +186,7 @@ const styles = StyleSheet.create({
     lineHeight: 23,
   },
   title: {
-    color: COLORS.white,
+    color: COLORS.primary,
     fontSize: 20,
     fontWeight: "bold",
     marginTop: 1,
@@ -202,7 +208,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 50,
     borderRadius: 5,
-    backgroundColor: "#fff",
+    backgroundColor: "#000",
     justifyContent: "center",
     alignItems: "center",
   },

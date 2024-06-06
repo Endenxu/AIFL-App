@@ -59,6 +59,7 @@ const SignUp = () => {
 
           <FormFieldsignup
             title="First Name"
+            placeholder="Name"
             value={form.username}
             handleChangeText={(e) => setForm({ ...form, username: e })}
             otherStyles="mt-0"
@@ -66,6 +67,7 @@ const SignUp = () => {
 
           <FormFieldsignup
             title="Last Name"
+            placeholder="Last Name"
             value={form.username}
             handleChangeText={(e) => setForm({ ...form, username: e })}
             otherStyles="mt-0"
@@ -73,6 +75,7 @@ const SignUp = () => {
 
           <FormFieldsignup
             title="Email Address"
+            placeholder="Email Address"
             value={form.email}
             handleChangeText={(e) => setForm({ ...form, email: e })}
             otherStyles="mt-0"
@@ -81,6 +84,7 @@ const SignUp = () => {
 
           <FormFieldsignup
             title="Phone Number"
+            placeholder="Phone"
             value={form.username}
             handleChangeText={(e) => setForm({ ...form, password: e })}
             otherStyles="mt-0"
@@ -88,6 +92,7 @@ const SignUp = () => {
 
           <FormFieldsignup
             title="Create a Password"
+            placeholder="Create Password"
             value={form.password}
             handleChangeText={(e) => setForm({ ...form, password: e })}
             otherStyles="mt-0"
@@ -95,20 +100,27 @@ const SignUp = () => {
 
           <FormFieldsignup
             title="Re-type Password"
+            placeholder="Confirm Password"
             value={form.password}
             handleChangeText={(e) => setForm({ ...form, password: e })}
             otherStyles="mt-0"
           />
 
+          <View className="flex flex-row gap-2">
+            <Text className="text-xm font-pextralight">
+              By Creating account, you are accepting terms & conditions
+            </Text>
+          </View>
+
           <CustomButton
             title="Register"
             handlePress={submit}
-            containerStyles="mt-7"
+            containerStyles="mt-7 bottom-6"
             isLoading={isSubmitting}
           />
 
-          <View className="flex justify-center pt-5 flex-row gap-2">
-            <Text className="text-lg text-gray-100 font-pregular">
+          <View className="flex justify-center pt-5 flex-row gap-2 bottom-9">
+            <Text className="text-lg text-black font-pregular">
               Have an account already?
             </Text>
             <Link

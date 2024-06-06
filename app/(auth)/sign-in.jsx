@@ -69,6 +69,7 @@ const SignIn = () => {
           />
 
           <FormField
+            title="Password"
             placeholder="Password"
             placeholderTextColor="#000"
             value={form.password}
