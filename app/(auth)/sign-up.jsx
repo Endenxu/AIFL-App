@@ -5,7 +5,7 @@ import { View, Text, ScrollView, Dimensions, Alert, Image } from "react-native";
 
 import { images } from "../../constants";
 import { createUser } from "../../lib/appwrite";
-import { CustomButton, FormField } from "../../components";
+import { CustomButton, FormField, FormFieldsignup } from "../../components";
 import { useGlobalContext } from "../../context/GlobalProvider";
 
 const SignUp = () => {
@@ -41,45 +41,67 @@ const SignUp = () => {
     <SafeAreaView className="bg-white h-full">
       <ScrollView>
         <View
-          className="w-full flex justify-center h-full px-4 my-6"
+          className="w-full flex justify-center h-full px-4 my-1"
           style={{
             minHeight: Dimensions.get("window").height - 100,
           }}
         >
-          <Image
-            source={images.aifllogo}
-            resizeMode="contain"
-            className="w-[100px] h-[100px]"
-          />
+          <View className="flex flex-row pt-12 ">
+            <Text className="text-lg font-semibold text-black mt-1 font-psemibold flex flex-row w-[250px] h-[100px] bottom-5">
+              Create a new account{" "}
+            </Text>
+            <Image
+              source={images.aifllogo}
+              resizeMode="contain"
+              className="w-[100px] h-[100px] flex flex-row right-3 bottom-12"
+            />
+          </View>
 
-          <Text className="text-2xl font-semibold text-black mt-1 font-psemibold">
-            Sign Up to MeAPP{" "}
-          </Text>
-
-          <FormField
-            title="Username"
+          <FormFieldsignup
+            title="First Name"
             value={form.username}
             handleChangeText={(e) => setForm({ ...form, username: e })}
-            otherStyles="mt-10"
+            otherStyles="mt-0"
           />
 
-          <FormField
-            title="Email"
+          <FormFieldsignup
+            title="Last Name"
+            value={form.username}
+            handleChangeText={(e) => setForm({ ...form, username: e })}
+            otherStyles="mt-0"
+          />
+
+          <FormFieldsignup
+            title="Email Address"
             value={form.email}
             handleChangeText={(e) => setForm({ ...form, email: e })}
-            otherStyles="mt-7"
+            otherStyles="mt-0"
             keyboardType="email-address"
           />
 
-          <FormField
-            title="Password"
+          <FormFieldsignup
+            title="Phone Number"
+            value={form.username}
+            handleChangeText={(e) => setForm({ ...form, password: e })}
+            otherStyles="mt-0"
+          />
+
+          <FormFieldsignup
+            title="Create a Password"
             value={form.password}
             handleChangeText={(e) => setForm({ ...form, password: e })}
-            otherStyles="mt-7"
+            otherStyles="mt-0"
+          />
+
+          <FormFieldsignup
+            title="Re-type Password"
+            value={form.password}
+            handleChangeText={(e) => setForm({ ...form, password: e })}
+            otherStyles="mt-0"
           />
 
           <CustomButton
-            title="Sign Up"
+            title="Register"
             handlePress={submit}
             containerStyles="mt-7"
             isLoading={isSubmitting}

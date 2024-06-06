@@ -9,6 +9,16 @@ import aifllogo from "../assets/images/aifllogo.png";
 import Apple from "../assets/images/Apple.png";
 import Google from "../assets/images/Google.png";
 import Facebook from "../assets/images/Facebook.png";
+import onboarding1 from "../assets/images/onboarding1.jpg";
+import onboarding2 from "../assets/images/onboarding2.jpg";
+import onboarding3 from "../assets/images/onboarding3.jpg";
+import onboarding4 from "../assets/images/onboarding4.jpg";
+import onboarding5 from "../assets/images/onboarding5.jpg";
+import onboarding6 from "../assets/images/onboarding6.jpg";
+import onboarding7 from "../assets/images/onboarding7.jpg";
+import onboarding8 from "../assets/images/onboarding8.jpg";
+import onboarding9 from "../assets/images/onboarding9.jpg";
+import testimage from "../assets/images/testimage.jpg";
 
 export default {
   profile,
@@ -22,4 +32,14 @@ export default {
   Apple,
   Google,
   Facebook,
+  testimage,
+  onboarding1,
+  onboarding2,
+  onboarding3,
+  onboarding4,
+  onboarding5,
+  onboarding6,
+  onboarding7,
+  onboarding8,
+  onboarding9,
 };

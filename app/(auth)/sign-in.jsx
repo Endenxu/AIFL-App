@@ -61,6 +61,7 @@ const SignIn = () => {
 
           <FormField
             placeholder="Username or Email"
+            placeholderTextColor="#000"
             value={form.email}
             handleChangeText={(e) => setForm({ ...form, email: e })}
             otherStyles="bot-3"
@@ -69,6 +70,7 @@ const SignIn = () => {
 
           <FormField
             placeholder="Password"
+            placeholderTextColor="#000"
             value={form.password}
             handleChangeText={(e) => setForm({ ...form, password: e })}
             otherStyles="bot-3"
