@@ -41,7 +41,7 @@ const OnboardingLast = () => {
           <CustomButton
             title="Sign up free"
             containerStyles="mt-7 bg-slate-600 rounded-3xl min-h-[42px] "
-            onPress={() => router.push("/sign-up")}
+            handlePress={() => router.push("/sign-up")}
           />
           <CustomNumber
             title="Continue with phone number"
@@ -58,7 +58,7 @@ const OnboardingLast = () => {
           <CustomButton
             title="Log In"
             containerStyles="mt-7 bottom-6 "
-            onPress={() => router.push("/sign-in")}
+            handlePress={() => router.push("/sign-in")}
           />
         </View>
       </ScrollView>

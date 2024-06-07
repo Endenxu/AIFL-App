@@ -68,8 +68,6 @@ const SignUp = () => {
           <FormFieldsignup
             title="Last Name"
             placeholder="Last Name"
-            value={form.username}
-            handleChangeText={(e) => setForm({ ...form, username: e })}
             otherStyles="mt-0"
           />
 
@@ -85,8 +83,6 @@ const SignUp = () => {
           <FormFieldsignup
             title="Phone Number"
             placeholder="Phone"
-            value={form.username}
-            handleChangeText={(e) => setForm({ ...form, password: e })}
             otherStyles="mt-0"
           />
 
@@ -101,7 +97,6 @@ const SignUp = () => {
           <FormFieldsignup
             title="Re-type Password"
             placeholder="Confirm Password"
-            value={form.password}
             handleChangeText={(e) => setForm({ ...form, password: e })}
             otherStyles="mt-0"
           />
