@@ -19,6 +19,8 @@ import onboarding7 from "../assets/images/onboarding7.jpg";
 import onboarding8 from "../assets/images/onboarding8.jpg";
 import onboarding9 from "../assets/images/onboarding9.jpg";
 import testimage from "../assets/images/testimage.jpg";
+import black from "../assets/images/black.jpg";
+import phoneicon from "../assets/images/phoneicon.png";
 
 export default {
   profile,
@@ -33,6 +35,7 @@ export default {
   Google,
   Facebook,
   testimage,
+  black,
   onboarding1,
   onboarding2,
   onboarding3,
@@ -42,4 +45,5 @@ export default {
   onboarding7,
   onboarding8,
   onboarding9,
+  phoneicon,
 };

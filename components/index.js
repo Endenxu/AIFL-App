@@ -10,6 +10,7 @@ import EmptyState from "./EmptyState";
 import CustomSocial from "./CustomSocial";
 import CustomSocial2 from "./CustomSocial2";
 import CustomSocial3 from "./CustomSocial3";
+import CustomNumber from "./CustomNumber";
 
 export {
   VideoCard,
@@ -24,4 +25,5 @@ export {
   CustomSocial,
   CustomSocial2,
   CustomSocial3,
+  CustomNumber,
 };

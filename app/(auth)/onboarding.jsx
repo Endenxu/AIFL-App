@@ -13,7 +13,7 @@ import {
   Dimensions,
 } from "react-native";
 
-const { width, height } = Dimensions.get("window");
+const { width, height } = Dimensions.get("screen");
 
 const COLORS = { primary: "#020617", white: "#f8fafc" };
 
@@ -22,8 +22,7 @@ const Slide = ({ item }) => {
     <View className="items-center">
       <Image
         source={item?.image}
-        style={{ height: "85%", width, display: "flex" }}
-        resizeMode="contain"
+        style={{ height: "85%", width, resizeMode: "contain" }}
       />
       <View>
         <Text style={styles.title}>{item?.title}</Text>
@@ -96,7 +95,7 @@ const OnboardingScreen = ({ navigation }) => {
             <View style={{ height: 50 }}>
               <TouchableOpacity
                 style={styles.btn}
-                onPress={() => router.push("/sign-in")}
+                onPress={() => router.push("/onboarding-last")}
               >
                 <Text
                   style={{
@@ -105,7 +104,7 @@ const OnboardingScreen = ({ navigation }) => {
                     color: COLORS.white,
                   }}
                 >
-                  GET STARTED
+                  LETS GET STARTED
                 </Text>
               </TouchableOpacity>
             </View>

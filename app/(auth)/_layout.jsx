@@ -19,6 +19,12 @@ const AuthLayout = () => {
           }}
         />
         <Stack.Screen
+          name="onboarding-last"
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
           name="sign-in"
           options={{
             headerShown: false,
