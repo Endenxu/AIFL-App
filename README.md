@@ -3,9 +3,25 @@
   <p>in Development<p>
 </div>
 
+**What to do first**
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+- [jdk](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+
+Then setup environment for React Native.
+
+For React Native Environmental setup you can watch it on this <a href="https://youtu.be/G0wrlZvDjrE?si=82EgUoZHlyWqRz3e">link<a/>.
+
 **Installation**
 
-Setup environment for React Native first.
+Clone or download repository
+
+```bash
+git clone git@github.com:Endenxu/AIFL-App.git
+```
 
 Install the project dependencies using npm:
 
@@ -26,3 +42,5 @@ Download the [Expo Go](https://expo.dev/go) app onto your device, then use it to
 ```bash
 npx expo start
 ```
+
+press (a) for android emulator (andoid studio) or scan QR via expo hub.
