@@ -5,6 +5,8 @@
 
 **Installation**
 
+Setup environment for React Native first.
+
 Install the project dependencies using npm:
 
 ```bash
