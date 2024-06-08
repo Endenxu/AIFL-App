@@ -4,8 +4,10 @@
 </div>
 
 **What to do first**
-Make sure you have the following installed on your machine:
 
+<div>
+<p>Make sure you have the following installed on your machine:<P>
+</div>
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
@@ -13,7 +15,7 @@ Make sure you have the following installed on your machine:
 
 Then setup environment for React Native.
 
-For React Native Environmental setup you can watch it on this <a href="https://youtu.be/G0wrlZvDjrE?si=82EgUoZHlyWqRz3e">link<a/>.
+For React Native Environmental setup you can watch it on this <a href="https://youtu.be/G0wrlZvDjrE?si=82EgUoZHlyWqRz3e" target="_blank">link<a/>.
 
 **Installation**
 
@@ -35,7 +37,7 @@ npm install
 npm start
 ```
 
-**Expo Go Note: It needs to be version 50.0**
+**Expo Go (Note: It needs to be version 50.0)**
 
 Download the [Expo Go](https://expo.dev/go) app onto your device, then use it to scan the QR code from Terminal and run.
 
