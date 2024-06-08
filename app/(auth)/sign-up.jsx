@@ -5,7 +5,11 @@ import { View, Text, ScrollView, Dimensions, Alert, Image } from "react-native";
 
 import { images } from "../../constants";
 import { createUser } from "../../lib/appwrite";
-import { CustomButton, FormField, FormFieldsignup } from "../../components";
+import {
+  CustomButton,
+  CustomCheckbox,
+  FormFieldsignup,
+} from "../../components";
 import { useGlobalContext } from "../../context/GlobalProvider";
 
 const SignUp = () => {
@@ -100,9 +104,9 @@ const SignUp = () => {
             handleChangeText={(e) => setForm({ ...form, password: e })}
             otherStyles="mt-0"
           />
-
-          <View className="flex flex-row gap-2">
-            <Text className="text-xm font-pextralight">
+          <View className="flex flex-row gap-2 w-[300px] justify-center left-5">
+            <CustomCheckbox />
+            <Text className="text-xs font-pextralight">
               By Creating account, you are accepting terms & conditions
             </Text>
           </View>
@@ -115,14 +119,14 @@ const SignUp = () => {
           />
 
           <View className="flex justify-center pt-5 flex-row gap-2 bottom-9">
-            <Text className="text-lg text-black font-pregular">
+            <Text className="text-regular text-black font-pregular">
               Have an account already?
             </Text>
             <Link
               href="/sign-in"
-              className="text-lg font-psemibold text-black underline"
+              className="text-regular font-psemibold text-black"
             >
-              Login
+              Sign in
             </Link>
           </View>
         </View>

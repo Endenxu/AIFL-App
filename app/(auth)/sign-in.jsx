@@ -9,6 +9,7 @@ import {
   CustomSocial,
   CustomSocial2,
   CustomSocial3,
+  CustomToggle,
   FormField,
 } from "../../components";
 import { getCurrentUser, signIn } from "../../lib/appwrite";
@@ -77,7 +78,7 @@ const SignIn = () => {
             otherStyles="bot-3"
           />
 
-          <View className="flex flex-row gap-12 justify-center">
+          <View className="flex flex-row gap-12 justify-center top-4">
             <Text className="text-sm text-black font-pregular underline ">
               Reset Password
             </Text>
@@ -86,14 +87,21 @@ const SignIn = () => {
             </Text>
           </View>
 
+          <View className="flex flex-row gap-[11px] justify-between top-8">
+            <Text className="flex font-pbold text-black left-[10px]">
+              Remember me
+            </Text>
+            <CustomToggle className="flex" />
+          </View>
+
           <CustomButton
             title="Log In"
             handlePress={submit}
-            containerStyles="mt-7"
+            containerStyles="mt-7 top-4"
             isLoading={isSubmitting}
           />
 
-          <View className="flex justify-center flex-row">
+          <View className="flex justify-center flex-row bottom-2">
             <Text className="text-sm text-black pt-5 font-bold mt-4 mb-4">
               OR
             </Text>
@@ -102,23 +110,23 @@ const SignIn = () => {
           <CustomSocial
             title="Continue with Facebook"
             handlePress={submit}
-            containerStyles="mt-4"
+            containerStyles="mt-4 bottom-3"
             isLoading={isSubmitting}
           />
           <CustomSocial2
             title="Continue with Google"
             handlePress={submit}
-            containerStyles="mt-4"
+            containerStyles="mt-4 bottom-3"
             isLoading={isSubmitting}
           />
           <CustomSocial3
             title="Continue with Apple"
             handlePress={submit}
-            containerStyles="mt-4 mb-2"
+            containerStyles="mt-4 mb-2 bottom-3"
             isLoading={isSubmitting}
           />
 
-          <View className="flex justify-center pt-5 flex-row gap-2">
+          <View className="flex justify-center pt-5 flex-row gap-2 bottom-3">
             <Text className="text-sm text-black font-pregular">
               Don't have an account?
             </Text>
@@ -129,7 +137,7 @@ const SignIn = () => {
               Signup
             </Link>
           </View>
-          <View className="flex justify-center flex-row mt-3">
+          <View className="flex justify-center flex-row mt-3 bottom-6">
             <Text className="text-black font-bold text-lg">SETTINGS</Text>
           </View>
         </View>

@@ -11,6 +11,8 @@ import CustomSocial from "./CustomSocial";
 import CustomSocial2 from "./CustomSocial2";
 import CustomSocial3 from "./CustomSocial3";
 import CustomNumber from "./CustomNumber";
+import CustomCheckbox from "./CustomCheckbox";
+import CustomToggle from "./CustomToggle";
 
 export {
   VideoCard,
@@ -26,4 +28,6 @@ export {
   CustomSocial2,
   CustomSocial3,
   CustomNumber,
+  CustomCheckbox,
+  CustomToggle,
 };
